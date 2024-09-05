@@ -470,6 +470,7 @@ if(!isset($_SESSION["user_id"]))
 
 </script>
 <?php
+$general_settings ='';
 //Checking if general settings updated successfully
   if($general_settings == "true")
   {
@@ -500,7 +501,7 @@ if(!isset($_SESSION["user_id"]))
     <?php
   }
   else {}
-  
+  $other_setting = '';
   //Checking if other settings updated successfully
   if($other_settings == "true")
   {
@@ -570,6 +571,7 @@ if(!isset($_SESSION["user_id"]))
   else {}
 
   //Checking if other settings updated successfully
+  $delete='';
   if($delete == "true")
   {
     ?>
